@@ -31,5 +31,28 @@ public partial class TabbedPageDemo : TabbedPage
         }
 
     }
-    
+
+
+    public int sil(int s)
+    {
+        if (s < 2) return 1;
+        return s *sil( s - 1);
+    }
+
+    private void silnia(object sender, EventArgs e)
+    {
+
+        if (int.TryParse(c.Text, out int la)) {
+
+            wynik_silnia.Text = sil(la).ToString();
+
+        }
+        else
+        {
+            wynik_silnia.Text = "B³¹d: WprowadŸ poprawne liczby.";
+        }
+
+    }
+
+
 }

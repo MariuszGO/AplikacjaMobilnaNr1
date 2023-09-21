@@ -8,31 +8,46 @@
             
 >
 
-    <ContentPage Title="NWD" IconImageSource="dotnet_bot.svg">
+    <ContentPage Title="NWD" IconImageSource="zd.png">
         <StackLayout>
             <Entry Placeholder="Liczba 1" x:Name="a" />
             <Entry Placeholder="Liczba 2" x:Name="b" />
             <Button Text="NWD" Clicked="nwd" />
             <Label x:Name="resultLabel" 
               FontSize="30" 
-              FontFamily="Comics"
+              
               HorizontalOptions="Center"
               TextColor="Crimson"
               BackgroundColor="Bisque"
              />
         </StackLayout>
     </ContentPage>
-    <ContentPage Title="Page 2" IconImageSource="dotnet_bot.svg">
-    <Button 
-    Text="Click me"
+    <ContentPage Title="Silnia" IconImageSource="dotnet_bot.svg">
+        <StackLayout>
+
+            <Entry Placeholder="Liczba 1" x:Name="c" />
+
+            <Button       
+    Text="Silnia"
     FontAttributes="Bold"
-    VerticalOptions="StartAndExpand"
-    HorizontalOptions="Center" />
-        
+    VerticalOptions="Start"
+    HorizontalOptions="Fill" 
+    Clicked="silnia" />
+                
+        <Label 
+            x:Name="wynik_silnia"
+            VerticalOptions="Center"
+            HorizontalOptions="Fill"
+            />
+            </StackLayout>
     </ContentPage>
     <ContentPage Title="Page 3" IconImageSource="dotnet_bot.svg">
         <Label Text="Demo"/>
     
+    </ContentPage>
+    <ContentPage Title="Kontakt" IconImageSource="dotnet_bot.svg">
+        <Label Text="Demo"/>
+
     </ContentPage>
 
 </TabbedPage>
